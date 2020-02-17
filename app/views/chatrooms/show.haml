@@ -1,0 +1,16 @@
+.card.mt-3
+  .card-header
+    .h5
+      = @chatroom.topic
+  .card-body
+    - if @chatroom.messages.any?
+      - @chatroom.messages.each do |message|
+        .card
+          .card-body
+            = message.content
+
+.card.mt-3
+  .card-header
+    New message
+  .card-body
+    = render partial: 'messages/form', locals: {message: @message, chatroom: @chatroom}
