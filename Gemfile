@@ -24,10 +24,6 @@ gem 'redis', '~> 4.0'
 
 gem 'haml'
 
-gem 'jquery-rails'
-
-gem 'bootstrap', '~> 4.4.1'
-
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 

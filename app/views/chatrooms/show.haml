@@ -3,11 +3,12 @@
     .h5
       = @chatroom.topic
   .card-body
-    - if @chatroom.messages.any?
-      - @chatroom.messages.each do |message|
-        .card
-          .card-body
-            = message.content
+    .message-log
+      - if @chatroom.messages.any?
+        - @chatroom.messages.each do |message|
+          .card
+            .card-body
+              = message.content
 
 .card.mt-3
   .card-header
